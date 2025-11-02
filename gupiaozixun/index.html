@@ -14,6 +14,43 @@
 
 </head>
 <body>
-  <p>分类首页</p>
+<!-- 导航栏 -->
+<header class="header-nav">
+    <!-- 顶部 -->
+    <section class="header-top">
+        <div class="container header-flex">
+            <div class="header-logo"><a href="#">LOGO</a></div>
+            <div class="header-banner"><p>顶部通栏banner区 - 欢迎访问我们的网站</p></div>
+        </div>
+    </section>
+    <div class="container nav-wrapper">
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item active"><a href="#">首页</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#">分类1 <i class="icon ali ico-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#">子分类1</a></li>
+                        <li class="dropdown-item"><a href="#">子分类2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#">分类2</a></li>
+            </ul>
+        </nav>
+        <button id="mobile-menu-button"><i class="icon ali ico-menu"></i></button>
+    </div>
+    <ul id="mobile-menu">
+        <li><a href="#">首页</a></li>
+        <!-- 修改分类1为带有子菜单的结构 -->
+        <li class="mobile-dropdown">
+            <a href="#" class="mobile-dropdown-toggle">分类1 <i class="icon ali ico-down"></i></a>
+            <ul class="mobile-dropdown-menu">
+                <li><a href="#">子分类1</a></li>
+                <li><a href="#">子分类2</a></li>
+            </ul>
+        </li>
+        <li><a href="#">分类2</a></li>
+    </ul>
+</header>
 </body>
 </html>
